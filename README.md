@@ -1,3 +1,3 @@
-# exercise
-My solutions to exercism exercises
+# exercism
+My solutions to exercism Python exercises
 See: http://exercism.io
