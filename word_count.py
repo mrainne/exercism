@@ -10,14 +10,11 @@ def word_count(words):
     translationTable = words.maketrans(punctuation, " " * len(punctuation))
     word_list = words.translate(translationTable).lower().strip().split()
     
-    # dictionary variable for saving words and word counts
-    counts = {}
+    # dictionary where words are used as keys and values are set to 0.
+    counts = {word : 0 for word in set(word_list)}
     
     for word in word_list:
-    	if word not in counts:
-    		counts[word] = 1
-    	else:
-    		counts[word] += 1 
+    	counts[word] += 1 
     		
     return counts
 
